@@ -149,6 +149,12 @@ DEEPSEEK_BASE_URL=https://api.deepseek.com
 DEEPSEEK_MODEL=deepseek-chat
 ```
 
+## Interface Style
+<img width="1857" height="1317" alt="截图1" src="https://github.com/user-attachments/assets/b277859f-dd45-4387-a5ae-15a6c1c3cec2" />
+<img width="1046" height="773" alt="截图2" src="https://github.com/user-attachments/assets/47c63aa3-7bce-4ca3-a662-b5e618d3cd44" />
+
+
+
 ## Deployment modes
 
 ### Real LLM mode
