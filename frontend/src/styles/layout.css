@@ -1,0 +1,375 @@
+.page-shell {
+  min-height: 100vh;
+  padding: 28px 16px 48px;
+}
+
+.compact-shell {
+  background:
+    radial-gradient(circle at top left, rgba(129, 189, 255, 0.28), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(71, 214, 255, 0.22), transparent 24%),
+    linear-gradient(180deg, #eef7ff 0%, #f7fbff 55%, #ffffff 100%);
+}
+
+.center-panel,
+.results-shell {
+  width: min(100%, 560px);
+  margin: 0 auto;
+}
+
+.center-panel {
+  padding: 12px;
+  border-radius: 30px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(239, 250, 255, 0.86));
+  box-shadow: 0 24px 70px rgba(96, 149, 221, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.main-form-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.upload-block,
+.text-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px 18px 16px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(248, 252, 255, 0.9));
+  border: 1px solid rgba(145, 187, 246, 0.28);
+}
+
+.field-title {
+  color: #6d84a3;
+  font-size: 14px;
+}
+
+.file-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.upload-block input[type="file"] {
+  max-width: 220px;
+}
+
+.upload-block strong {
+  color: #74839b;
+  font-weight: 500;
+}
+
+.upload-block small {
+  color: #111b33;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.text-field input {
+  border: 1px solid rgba(145, 187, 246, 0.45);
+  border-radius: 18px;
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #33425f;
+  outline: none;
+}
+
+.check-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 2px 4px 4px;
+  color: #111b33;
+  font-size: 15px;
+}
+
+.large-button {
+  border-radius: 18px;
+  min-height: 50px;
+  font-size: 17px;
+}
+
+.primary-button {
+  width: 100%;
+  border: 0;
+  padding: 14px 22px;
+  background: linear-gradient(90deg, #5e97f7, #44caea);
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 18px 36px rgba(75, 153, 238, 0.24);
+}
+
+.primary-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.status-strip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+  padding: 10px 12px 4px;
+  color: #6c7e98;
+  font-size: 14px;
+}
+
+.status-strip p {
+  margin: 0;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #53c7ea;
+  flex: 0 0 auto;
+}
+
+.status-strip-error {
+  color: #ca5f5f;
+}
+
+.status-strip-error .status-dot {
+  background: #eb7070;
+}
+
+.compact-results {
+  width: min(100%, 1040px);
+  padding-top: 24px;
+}
+
+.score-panel,
+.glass-card,
+.content-card {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(145, 187, 246, 0.24);
+  box-shadow: 0 18px 48px rgba(98, 149, 220, 0.12);
+}
+
+.score-panel {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 26px;
+  border-radius: 24px;
+  margin-bottom: 16px;
+}
+
+.score-panel h2 {
+  margin: 0;
+  font-size: clamp(46px, 6vw, 78px);
+  line-height: 1;
+}
+
+.section-kicker {
+  margin: 0 0 8px;
+  color: #5f8df0;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.section-subtitle,
+.muted-copy,
+.point-item p,
+.point-item small,
+.suggestion-item p,
+.score-aside span,
+th,
+.report-link {
+  color: #6c7e98;
+}
+
+.score-aside {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(84px, 1fr));
+  gap: 12px;
+  min-width: 280px;
+}
+
+.score-aside div {
+  padding: 14px;
+  border-radius: 16px;
+  background: #f6fbff;
+  border: 1px solid rgba(145, 187, 246, 0.2);
+}
+
+.score-aside strong {
+  display: block;
+  margin-top: 6px;
+  font-size: 26px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.glass-card,
+.content-card {
+  padding: 20px;
+  border-radius: 22px;
+}
+
+.glass-card h3,
+.card-header h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+
+.dual-column {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.card-header span {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #eef6ff;
+  color: #4f86ef;
+}
+
+.report-link {
+  font-size: 14px;
+}
+
+.point-list,
+.suggestion-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.point-item,
+.suggestion-item {
+  padding: 14px;
+  border-radius: 16px;
+  background: #f9fcff;
+  border: 1px solid rgba(145, 187, 246, 0.18);
+}
+
+.point-chip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.point-chip span {
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: #eef6ff;
+  color: #4f86ef;
+  font-size: 12px;
+}
+
+.point-item strong {
+  display: block;
+  margin: 10px 0 6px;
+}
+
+.suggestion-item {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 14px;
+}
+
+.suggestion-item span {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: rgba(79, 134, 239, 0.12);
+  color: #4f86ef;
+  font-weight: 700;
+}
+
+.table-shell {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  vertical-align: top;
+  padding: 12px 10px;
+  border-bottom: 1px solid rgba(145, 187, 246, 0.16);
+}
+
+.empty-row {
+  text-align: center;
+  color: #6c7e98;
+}
+
+.json-viewer {
+  margin: 0;
+  padding: 18px;
+  border-radius: 16px;
+  background: #0f1728;
+  color: #d6ebff;
+  font-size: 13px;
+  line-height: 1.7;
+  overflow-x: auto;
+}
+
+@media (max-width: 1080px) {
+  .compact-results,
+  .card-grid,
+  .dual-column {
+    width: min(100%, 560px);
+    grid-template-columns: 1fr;
+  }
+
+  .score-panel {
+    flex-direction: column;
+  }
+
+  .score-aside {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-shell {
+    padding-inline: 10px;
+  }
+
+  .center-panel {
+    padding: 10px;
+    border-radius: 24px;
+  }
+
+  .upload-block,
+  .text-field,
+  .content-card,
+  .glass-card,
+  .score-panel {
+    padding: 16px;
+  }
+
+  .score-aside {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "score": 83,
+  "level": "存在遗漏，需补充",
+  "dimension_scores": {
+    "core_function": {
+      "score": 50,
+      "full_score": 50,
+      "reason": "已覆盖 3/3 个需求点。"
+    },
+    "business_rules_and_boundaries": {
+      "score": 18,
+      "full_score": 25,
+      "reason": "扣分 7 分。未覆盖需求点：[REQ-006] 密码达到 20 位时仍允许提交"
+    },
+    "exception_flows": {
+      "score": 5,
+      "full_score": 15,
+      "reason": "扣分 10 分。未覆盖需求点：[REQ-009] 连续输错密码 5 次后需要限制登录 10 分钟"
+    },
+    "non_functional": {
+      "score": 10,
+      "full_score": 10,
+      "reason": "已覆盖 2/2 个需求点。"
+    }
+  },
+  "covered_points": [],
+  "missing_points": [],
+  "suggestions": [
+    "补充密码长度上边界 20 位的边界测试。",
+    "补充连续输错密码 5 次后的限流与锁定测试。"
+  ],
+  "generated_cases": []
+}
+

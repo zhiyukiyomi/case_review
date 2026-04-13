@@ -1,0 +1,22 @@
+:root {
+  --bg: #f6fbff;
+  --bg-soft: #eef6ff;
+  --panel: rgba(255, 255, 255, 0.82);
+  --panel-strong: #ffffff;
+  --line: rgba(74, 129, 214, 0.16);
+  --line-strong: rgba(46, 101, 196, 0.26);
+  --text: #0f1728;
+  --muted: #5f6f89;
+  --brand: #1f75ff;
+  --brand-soft: #cfe5ff;
+  --accent: #00b9d7;
+  --warm: #ffd89a;
+  --shadow: 0 24px 70px rgba(50, 105, 184, 0.12);
+  --radius-xl: 28px;
+  --radius-lg: 22px;
+  --radius-md: 16px;
+  --max-width: 1240px;
+  --font-heading: "Avenir Next", "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-body: "Space Grotesk", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
